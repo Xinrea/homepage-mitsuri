@@ -33,7 +33,7 @@ contentTextarea?.addEventListener('input', updateCharCount)
 // 从API获取评论数据
 async function fetchComments() {
     try {
-        const response = await fetch('http://api-fc.vjoi.cn/topics');
+        const response = await fetch('https://api-fc.vjoi.cn/topics');
         const data = await response.json();
         return data;
     } catch (error) {

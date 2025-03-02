@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const followerNumberElement = document.querySelector('.follower-number');
         
         try {
-            const response = await axios.get('http://api-fc.vjoi.cn/status');
+            const response = await axios.get('https://api-fc.vjoi.cn/status');
             console.log('API Response:', response.data);
             
             const { follower } = response.data;
@@ -352,7 +352,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 获取直播状态和粉丝数
     async function fetchStatusAndFollowers() {
         try {
-            const response = await fetch('http://api-fc.vjoi.cn/status');
+            const response = await fetch('https://api-fc.vjoi.cn/status');
             const data = await response.json();
             
             // 更新直播状态
