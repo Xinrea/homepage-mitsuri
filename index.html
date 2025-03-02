@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>三理 Mit3uri</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="scan-line"></div>
+    <div class="background-glitch"></div>
+
+    <div class="spaceship">
+      <div class="ship-body"></div>
+    </div>
+
+    <div class="page-container">
+      <section class="page page-1">
+        <div class="glitch-container">
+          <div class="avatar-container">
+            <canvas id="avatar3D"></canvas>
+          </div>
+          <div class="text-content">
+            <div class="title-container">
+              <div class="glitch" data-text="三理">三理</div>
+              <div class="glitch-subtitle" data-text="Mitsuri">Mit3uri</div>
+            </div>
+            <div class="follower-count">
+              <a href="https://live.bilibili.com/1967216004" class="live-status" target="_blank">
+                <span class="live-dot"></span>
+                <span class="live-text">OFFLINE</span>
+              </a>
+              <span class="follower-label">粉丝数</span>
+              <span class="follower-number">--</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-2">
+        <h2 class="section-title">Comments</h2>
+        <div class="comments-container">
+            <!-- Comments will be dynamically loaded here -->
+        </div>
+      </section>
+
+      <section class="page page-3">
+        <h2 class="section-title">About Me</h2>
+        <div class="content-container">
+            <div class="about-grid">
+                <div class="about-section">
+                    <h3><span class="icon">👤</span>个人信息</h3>
+                    <ul class="about-list">
+                        <li>昵称：Mitsuri</li>
+                        <li>性别：女</li>
+                        <li>生日：8月15日</li>
+                        <li>星座：狮子座</li>
+                        <li>血型：O型</li>
+                    </ul>
+                </div>
+                
+                <div class="about-section">
+                    <h3><span class="icon">💖</span>喜欢和不喜欢</h3>
+                    <div class="likes-dislikes">
+                        <div>
+                            <h4>喜欢的东西</h4>
+                            <ul class="about-list">
+                                <li>甜食</li>
+                                <li>可爱的事物</li>
+                                <li>动漫和漫画</li>
+                                <li>电子游戏</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>不喜欢的东西</h4>
+                            <ul class="about-list">
+                                <li>苦瓜</li>
+                                <li>下雨天</li>
+                                <li>早起</li>
+                                <li>运动</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <h3><span class="icon">🎮</span>游戏</h3>
+                    <div class="game-list">
+                        <div class="game-item">原神</div>
+                        <div class="game-item">崩坏：星穹铁道</div>
+                        <div class="game-item">明日方舟</div>
+                        <div class="game-item">赛博朋克2077</div>
+                        <div class="game-item">塞尔达传说</div>
+                        <div class="game-item">只狼</div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <h3><span class="icon">🎵</span>音乐</h3>
+                    <div class="music-list">
+                        <div class="music-item">J-POP</div>
+                        <div class="music-item">动漫音乐</div>
+                        <div class="music-item">游戏原声</div>
+                        <div class="music-item">电子音乐</div>
+                        <div class="music-item">轻音乐</div>
+                        <div class="music-item">摇滚</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="js/about.js"></script>
+    <script type="module" src="js/comments.js"></script>
+  </body>
+</html>
