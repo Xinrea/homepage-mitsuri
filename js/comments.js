@@ -61,7 +61,12 @@ function createCommentCard(comment) {
 
   const content = document.createElement("div");
   content.className = "comment-content";
-  content.textContent = comment.descText;
+  // limit 128 characters
+  if (comment.descText.length > 128) {
+    content.textContent = comment.descText.slice(0, 128) + "...";
+  } else {
+    content.textContent = comment.descText;
+  }
 
   const timestamp = document.createElement("div");
   timestamp.className = "comment-timestamp";
